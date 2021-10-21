@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AjaxControllerServlet</servlet-name>
+        <servlet-class>loginapppackage.AjaxControllerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AjaxRegistrationServlet</servlet-name>
+        <servlet-class>loginapppackage.AjaxRegistrationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ForgetPasswordServlet</servlet-name>
+        <servlet-class>loginapppackage.ForgetPasswordServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaveNewPasswordServlet</servlet-name>
+        <servlet-class>loginapppackage.SaveNewPasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjaxControllerServlet</servlet-name>
+        <url-pattern>/AjaxControllerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AjaxRegistrationServlet</servlet-name>
+        <url-pattern>/AjaxRegistrationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ForgetPasswordServlet</servlet-name>
+        <url-pattern>/ForgetPasswordServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SaveNewPasswordServlet</servlet-name>
+        <url-pattern>/SaveNewPasswordServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
